@@ -22,7 +22,7 @@ function Table() {
                 console.log('heyyyy________',res.data)
                 const tableData = res.data.user;
                 setuser(tableData)
-                data()
+                
             })
     }
 
@@ -32,7 +32,7 @@ function Table() {
         axios.delete(`http://localhost:6544/happy/${_id}`, { headers:{'x-access-token':token}})
         .then((result) => {
             console.log("result.data", result.data);
-            data()
+           data()
         })
 
     }
